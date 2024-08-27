@@ -54,10 +54,11 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="icon download"><i class="bi bi-behance"></i></a>
+      <a href="#" class="icon twitter"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="icon instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="icon linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="icon download"><i class="bi bi-download"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -66,37 +67,66 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> -->
-        <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Projects & Case Studies</span>
-            <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+        <li class="dropdown">
+          <a><i class="bi bi-laptop navicon"></i> <span>Projects</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
-            <li><a href="#">Project 1</a></li>
-            <li class="dropdown"><a href="#"><span>Case study</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown">
+              <a><span>UI/UX</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Deep Project 1</a></li>
-                <li><a href="#">Deep Project 2</a></li>
-                <li><a href="#">Deep Project 3</a></li>
-                <li><a href="#">Deep Project 4</a></li>
-                <li><a href="#">Deep Project 5</a></li>
+                <li>
+                  <input type="radio" id="light-theme-radio" name="theme" value="light">
+                  <label for="light-theme-radio">Light Theme</label>
+                </li>
+                <li>
+                  <input type="radio" id="dark-theme-radio" name="theme" value="dark">
+                  <label for="dark-theme-radio">Dark Theme</label>
+                </li>
               </ul>
             </li>
-            <li><a href="#">Project 2</a></li>
-            <li class="dropdown"><a href="#"><span>Case study</span> <i
-                  class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <li class="dropdown">
+              <a><span>Product</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
               <ul>
-                <li><a href="#">Deep Project 1</a></li>
-                <li><a href="#">Deep Project 2</a></li>
-                <li><a href="#">Deep Project 3</a></li>
-                <li><a href="#">Deep Project 4</a></li>
-                <li><a href="#">Deep Project 5</a></li>
+                <a href="portfolio-details.html">Project 1</a>
+                <a href="portfolio-details.html">Project 2</a>
+                <a href="portfolio-details.html">Project 3</a>
               </ul>
             </li>
-            <li><a href="#">Dropdown 3</a></li>
-            <li><a href="#">Dropdown 4</a></li>
+            <li class="dropdown">
+              <a><span>Graphics</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li>
+                  <input type="radio" id="light-theme-radio" name="theme" value="light">
+                  <label for="light-theme-radio">Light Theme</label>
+                </li>
+                <li>
+                  <input type="radio" id="dark-theme-radio" name="theme" value="dark">
+                  <label for="dark-theme-radio">Dark Theme</label>
+                </li>
+              </ul>
+            </li>
           </ul>
         </li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+
+        <!-- <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li> -->
+        <li class="dropdown">
+          <a><i class="bi bi-menu-button navicon"></i> <span>Settings</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <ul>
+            <li class="dropdown">
+              <a><span>Appearance</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li>
+                  <input type="radio" id="light-theme-radio" name="theme" value="light">
+                  <label for="light-theme-radio">Light Theme</label>
+                </li>
+                <li>
+                  <input type="radio" id="dark-theme-radio" name="theme" value="dark">
+                  <label for="dark-theme-radio">Dark Theme</label>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
       </ul>
     </nav>
 
@@ -417,9 +447,9 @@
 
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
-            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-app">UI/UX</li>
             <li data-filter=".filter-product">Product</li>
-            <li data-filter=".filter-branding">Branding</li>
+            <li data-filter=".filter-branding">Graphics</li>
             <!-- <li data-filter=".filter-books">Books</li> -->
           </ul><!-- End Portfolio Filters -->
 
@@ -433,7 +463,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/portfolio/app-1.jpg" title="App 1" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="uiux.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -448,7 +478,7 @@
                   <a href="assets/img/portfolio/product-1.jpg" title="Product 1"
                     data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="uiux.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -463,7 +493,7 @@
                   <a href="assets/img/portfolio/branding-1.jpg" title="Branding 1"
                     data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="uiux.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -477,7 +507,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/portfolio/books-1.jpg" title="App 2" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="product.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -491,7 +521,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/portfolio/app-2.jpg" title="Product 2" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="product.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -506,7 +536,7 @@
                   <a href="assets/img/portfolio/product-2.jpg" title="Branding 2"
                     data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
                       class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="product.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -520,7 +550,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/portfolio/branding-2.jpg" title="App 3" data-gallery="portfolio-gallery-branding"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="graphics.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -534,7 +564,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/portfolio/books-2.jpg" title="Product 3" data-gallery="portfolio-gallery-book"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="graphics.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
@@ -548,50 +578,7 @@
                   <p>Lorem ipsum, dolor sit amet consectetur</p>
                   <a href="assets/img/portfolio/app-3.jpg" title="App 3" data-gallery="portfolio-gallery-app"
                     class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>App 4</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/product-3.jpg" title="App 4" data-gallery="portfolio-gallery-product"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Product 4</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/branding-3.jpg" title="Product 4"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
-                </div>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
-                <div class="portfolio-info">
-                  <h4>Branding 4</h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 4" data-gallery="portfolio-gallery-book"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
+                  <a href="graphics.html" title="More Details" class="details-link"><i
                       class="bi bi-link-45deg"></i></a>
                 </div>
               </div>
