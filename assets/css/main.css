@@ -1612,3 +1612,45 @@ input[type="radio"]:checked+label {
 .skills-img:hover::after {
   opacity: 1;
 }
+
+/* Default styles (Desktop) */
+.skills img {
+  width: 5em;
+  height: auto;
+}
+
+.skills .container-img {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Tablet: Adjust layout and size */
+@media (max-width: 1024px) {
+  .skills img {
+    width: 4em;
+  }
+
+  .skills .container-img {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Mobile: Adjust layout and size */
+@media (max-width: 768px) {
+  .skills img {
+    width: 3em;
+  }
+
+  .skills .container-img {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skills-img {
+    margin-bottom: 20px; /* Space between skill images */
+  }
+}
