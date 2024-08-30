@@ -1236,6 +1236,22 @@ section,
   display: inline-block;
 }
 
+.behance::after {
+  content: 'Open Behance';
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  font-size: 12px;
+}
 .twitter::after {
   content: 'Open Twitter';
   position: absolute;
@@ -1305,7 +1321,7 @@ section,
 }
 
 .download::after {
-  content: 'Download Resume';
+  content: 'Get Resume';
   position: absolute;
   bottom: -30px;
   left: 50%;
